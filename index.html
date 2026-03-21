@@ -1,41 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Agent - aiagent.com.mx</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #007bff;
-        }
-        p {
-            font-size: 1.1em;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to aiagent.com.mx!</h1>
-        <p>This is the official website for AI Agent.</p>
-        <p>More content coming soon!</p>
-    </div>
-</body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIagent.com.mx — The Future of Intelligent Automation</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+ :root {
+ --black: #050508;
+ --white: #F4F1EC;
+ --cyan: #00FFD1;
+ --electric: #0AFFE0;
+ --orange: #FF5C1A;
+ --dim: #1A1A2E;
+ --mid: #0F3460;
+ --grid: rgba(0,255,209,0.06);
+ --glass: rgba(255,255,255,0.04);
+ --glass-border: rgba(0,255,209,0.18);
+ }
+
+ *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+ html { scroll-behavior: smooth; }
+
+ body {
+ background: var(--black);
+ color: var(--white);
+ font-family: 'Space Mono', monospace;
+ overflow-x: hidden;
+ cursor: crosshair;
+ }
+
+ /* ── GRID BACKGROUND ─────────────────────── */
+ body::before {
+ content:'';
+ position:fixed; inset:0; z-index:0;
+ background-image:
+ linear-gradient(var(--grid) 1px, transparent 1px),
+ linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+ background-size: 40px 40px;
+ pointer-events:none;
+ }
+
+ body::after {
+ content:'';
+ position:fixed; inset:0; z-index:0;
+ background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0,255,209,0.12) 0%, transparent 70%);
+ pointer-events:none;
+ }
+
+ /* ── SCAN LINE ──────────────────────────── */
+ @keyframes scanline {
+ 0% { transform: translateY(-100vh); }
+ 100%{ transform: translateY(100vh); }
+ }
+ .scanline {
+ position:fixed; left:0; top:0; right:0; height:2px; z-index:1000;
+ background: linear-gradient(transparent, rgba(0,255,209,0.15), transparent);
+ animation: scanline 8s linear infinite;
+ pointer-events:none;
+ }
+
+ /* ── LAYOUT ─────────────────────────────── */
+ .page { position:relative; z-index:1; max-width:1440px; margin:0 auto; padding:0 24px; }
+
+ /* ── HEADER ─────────────────────────────── */
+ header {
+ position:sticky; top:0; z-index:900;
+ background: rgba(5,5,8,0.85);
+ backdrop-filter: blur(20px);
+ border-bottom: 1px solid var(--glass-border);
+ }
+ .header-inner {
+ max-width:1440px; margin:0 auto; padding:0 24px;
+ display:flex; align-items:center; justify-content:space-between;
+ height:68px;
+ }
+ .logo {
+ font-family:'Syne', sans-serif; font-weight:800; font-size:1.35rem;
+ letter-spacing:-0.03em; text-decoration:none;
+ display:flex; align-items:center; gap:10px;
+ }
+ .logo-bracket { color: var(--cyan); font-size:1.6rem; }
+ .logo-text { color: var(--white); }
+ .logo-tld { color: var(--cyan); }
+ .logo-pulse {
+ width:8px; height:8px; border-radius:50%;
+ background: var(--cyan);
+ box-shadow: 0 0 10px var(--cyan);
+ animation: pulse 2s ease-in-out infinite;
+ }
+ @keyframes pulse {
+ 0%,100%{ opacity:1; transform:scale(1); }
+ 50%{ opacity:0.4; transform:scale(0.6); }
+ }
+
+ nav { display:flex; gap:32px; align-items:center; }
+ nav a {
+ color: rgba(244,241,236,0.6); text-decoration:none;
+ font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase;
+ transition: color 0.2s;
+ }
+ nav a:hover { color: var(--cyan); }
+ .nav-cta {
+ background: var(--cyan); color: var(--black) !important;
+ padding:8px 18px; font-weight:700 !important;
+ border: none; cursor:pointer; font-family:'Space Mono',monospace;
+ font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase;
+ }
+
+ /* ── HERO / BANNER AREA ─────────────────── */
+ .hero {
+ min-height:88vh; display:grid;
+ grid-template-columns: 1fr 340px;
+ gap:32px; align-items:center;
+ padding: 80px 0 60px;
+ }
+
+ .hero-left { position:relative; }
