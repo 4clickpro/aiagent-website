@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews — AIagent.com.mx</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root { --black: #050508; --white: #F4F1EC; --cyan: #00FFD1; --orange: #FF5C1A; }
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+body { background: var(--black); color: var(--white); font-family: 'Space Mono', monospace; overflow-x: hidden; }
+a { color: var(--cyan); text-decoration: none; }
+a:hover { color: var(--white); }
+.page { max-width: 1440px; margin: 0 auto; padding: 0 24px; }
+header { position: sticky; top: 0; z-index: 900; background: rgba(5,5,8,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,255,209,0.18); }
+.header-inner { max-width: 1440px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.35rem; letter-spacing: -0.03em; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.logo-bracket { color: var(--cyan); font-size: 1.6rem; }
+.logo-text { color: var(--white); }
+.logo-tld { color: var(--cyan); }
+.logo-pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 10px var(--cyan); animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{ opacity:1; transform:scale(1); } 50%{ opacity:0.4; transform:scale(0.6); } }
+nav { display: flex; gap: 32px; align-items: center; }
+nav a { color: rgba(244,241,236,0.6); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.2s; }
+nav a:hover { color: var(--cyan); }
+.hero { min-height: 60vh; display: flex; align-items: center; padding: 60px 0; }
+.hero-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 20px; }
+.hero-title em { font-style: normal; color: var(--cyan); }
+.hero-sub { font-size: 0.85rem; line-height: 1.8; color: rgba(244,241,236,0.6); max-width: 540px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; padding: 60px 0; }
+.card { border: 1px solid rgba(0,255,209,0.18); background: rgba(255,255,255,0.04); padding: 24px; transition: border-color 0.3s; cursor: pointer; }
+.card:hover { border-color: var(--cyan); }
+.card-tag { display: inline-block; padding: 3px 8px; background: rgba(255,92,26,0.15); border: 1px solid rgba(255,92,26,0.3); font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange); margin-bottom: 8px; }
+.card-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.1rem; margin-bottom: 10px; }
+.card-excerpt { font-size: 0.8rem; color: rgba(244,241,236,0.6); line-height: 1.6; margin-bottom: 12px; }
+.card-meta { font-size: 0.68rem; color: rgba(244,241,236,0.4); }
+footer { border-top: 1px solid rgba(0,255,209,0.1); padding: 50px 0 30px; background: rgba(0,0,0,0.4); margin-top: 60px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+.footer-brand-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.2rem; letter-spacing: -0.03em; margin-bottom: 12px; }
+.footer-brand-logo span { color: var(--cyan); }
+.footer-brand-desc { font-size: 0.72rem; color: rgba(244,241,236,0.45); line-height: 1.7; margin-bottom: 20px; }
+.footer-col-title { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cyan); margin-bottom: 16px; }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { color: rgba(244,241,236,0.5); text-decoration: none; font-size: 0.75rem; transition: color 0.2s; }
+.footer-links a:hover { color: var(--white); }
+@media(max-width:768px) { .footer-grid { grid-template-columns: 1fr 1fr; } nav { gap: 16px; } }
+</style>
+</head>
+<body>
+<div class="scanline"></div>
+<header>
+<div class="header-inner">
+<a href="index.html" class="logo">
+<span class="logo-bracket">[</span>
+<span class="logo-text">AIagent</span><span class="logo-tld">.com.mx</span>
+<span class="logo-bracket">]</span>
+<span class="logo-pulse"></span>
+</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="news.html">News</a>
+<a href="https://app.getdynamiq.ai?fpr=paul70">Tools</a>
+<a href="tutorials.html">Tutorials</a>
+<a href="reviews.html">Reviews</a>
+</nav>
+</div>
+</header>
+<div class="page">
+<section class="hero">
+<div>
+<h1 class="hero-title">AI <em>Reviews</em></h1>
+<p class="hero-sub">Independent reviews of the latest AI tools, agents, and automation platforms.</p>
+</div>
+</section>
+<div class="grid">
+<div class="card" onclick="location.href='blog/gemini-3-1-vs-minimax-2-7-review-1.html'">
+<span class="card-tag">Review</span>
+<div class="card-title">Why Gemini 3.1 Pro Annihilates MiniMax 2.7</div>
+<div class="card-excerpt">A brutal technical review of why MiniMax 2.7 fails completely under heavy HTML/coding loads.</div>
+<div class="card-meta">March 27, 2026 • 8 min read</div>
+</div>
+<div class="card" onclick="location.href='blog/gemini-3-1-vs-minimax-2-7-review-2.html'">
+<span class="card-tag">Review</span>
+<div class="card-title">Why I Switched from MiniMax 2.7 to Gemini</div>
+<div class="card-excerpt">The real-world performance difference that forced our migration to Gemini 3.1 Pro.</div>
+<div class="card-meta">March 27, 2026 • 6 min read</div>
+</div>
+<div class="card" onclick="location.href='blog/gemini-3-1-vs-minimax-2-7-review-3.html'">
+<span class="card-tag">Review</span>
+<div class="card-title">Gemini 3.1 Pro Destroys MiniMax in Testing</div>
+<div class="card-excerpt">Side-by-side benchmark results showing the clear winner for enterprise AI.</div>
+<div class="card-meta">March 27, 2026 • 7 min read</div>
+</div>
+<div class="card">
+<span class="card-tag">Review</span>
+<div class="card-title">Claude 3 vs GPT-4: Full Comparison 2026</div>
+<div class="card-excerpt">Which model wins for coding, reasoning, and long-context tasks?</div>
+<div class="card-meta">March 12, 2026 • 12 min read</div>
+</div>
+<div class="card">
+<span class="card-tag">Review</span>
+<div class="card-title">Top 10 AI Marketing Tools for 2026</div>
+<div class="card-excerpt">Our tested recommendations for automation, content, and lead generation tools.</div>
+<div class="card-meta">March 8, 2026 • 15 min read</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="page">
+<div class="footer-grid">
+<div>
+<div class="footer-brand-logo">AI<span>agent</span>.com.mx</div>
+<p class="footer-brand-desc">El medio especializado en inteligencia artificial y automatización para México y Latinoamérica.</p>
+</div>
+<div>
+<div class="footer-col-title">Categorías</div>
+<ul class="footer-links">
+<li><a href="index.html">Agentes de IA</a></li>
+<li><a href="tutorials.html">Tutoriales</a></li>
+<li><a href="reviews.html">Reviews</a></li>
+<li><a href="news.html">Noticias</a></li>
+<li><a href="index.html">Herramientas</a></li>
+<li><a href="index.html">Automatización</a></li>
+</ul>
+</div>
+<div>
+<div class="footer-col-title">Herramientas</div>
+<ul class="footer-links">
+<li><a href="#">ChatGPT</a></li>
+<li><a href="#">Claude</a></li>
+<li><a href="#">Gemini</a></li>
+<li><a href="#">Midjourney</a></li>
+<li><a href="#">Make.com</a></li>
+<li><a href="#">LangChain</a></li>
+</ul>
+</div>
+<div>
+<div class="footer-col-title">Empresa</div>
+<ul class="footer-links">
+<li><a href="index.html">Acerca de</a></li>
+<li><a href="index.html">Contacto</a></li>
+<li><a href="index.html">Publicidad</a></li>
+<li><a href="index.html">Afiliados</a></li>
+<li><a href="index.html">Newsletter</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
