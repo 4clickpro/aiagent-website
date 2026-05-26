@@ -594,6 +594,7 @@
  .affiliate-big { padding:36px 24px; }
  }
 </style>
+  <script src="https://www.paypal.com/sdk/js?client-id=BAABbe5bgI0NioYv64siihaR2sooYDW7ofpR7h1BpDKUGngNoFp6RX0KbXBZwgNV2TovnnG7dzNY1_SacI&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
 </head>
 <body>
 
@@ -891,7 +892,30 @@
  <div class="in-article-banner-text">
  <h4>The $0 Tech Stack: Frontend & Backend</h4>
  <p>Use Supabase as a free, open-source Firebase alternative to handle your database and authentication to build a functional MVP.</p>
- <a href="https://aiagent.com.mx/blog/0-cost-mvp.html" class="btn-primary" style="text-decoration:none; padding:10px 22px; font-size:0.72rem; letter-spacing:0.1em;">Get The Full Setup Guide →</a>
+ 
+<div id="paypal-button-container-1"></div>
+<script>
+  paypal.Buttons({
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '19.99' // Can be updated dynamically
+          },
+          description: 'The $0 Tech Stack MVP Blueprint'
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        alert('Transaction completed by ' + details.payer.name.given_name + '! Check your email for the guide.');
+        // Here you would normally redirect to the success/download page
+        window.location.href = "https://aiagent.com.mx/blog/0-cost-mvp.html";
+      });
+    }
+  }).render('#paypal-button-container-1');
+</script>
+
  </div>
  </div>
  </div>
@@ -915,7 +939,30 @@
  <div class="banner-tag">Editorial Recommendation</div>
  <h4>The $0 Tech Stack: No-Code / UI Design</h4>
  <p>If you prefer building visually without coding every line, FlutterFlow offers a generous free tier to build beautiful mobile and web apps without spending a dime.</p>
- <a href="https://aiagent.com.mx/blog/0-cost-mvp.html" class="btn-orange" style="text-decoration:none; display:inline-block; text-align:center;">Download The Tech Stack MVP Blueprint →</a>
+ 
+<div id="paypal-button-container-2"></div>
+<script>
+  paypal.Buttons({
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '49.99' // Can be updated dynamically
+          },
+          description: 'Pre-Built AI MVP Template'
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        alert('Transaction completed by ' + details.payer.name.given_name + '! Check your email for the guide.');
+        // Here you would normally redirect to the success/download page
+        window.location.href = "https://aiagent.com.mx/blog/0-cost-mvp.html";
+      });
+    }
+  }).render('#paypal-button-container-2');
+</script>
+
  </div>
  </div>
  </div>
@@ -940,7 +987,30 @@
  <div class="banner-tag-cyan">Top Rated</div>
  <h4>The $0 Tech Stack: Instant Hosting</h4>
  <p>Deploy your frontend for free on Vercel or Netlify. Leverage free tiers and open-source tools to launch your Minimum Viable Product (MVP) today.</p>
- <a href="https://aiagent.com.mx/blog/0-cost-mvp.html" class="btn-primary" style="text-decoration:none; display:inline-block; text-align:center; font-size:0.72rem;padding:10px 20px;letter-spacing:0.1em;">Get the $0 Launch Blueprint →</a>
+ 
+<div id="paypal-button-container-3"></div>
+<script>
+  paypal.Buttons({
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '149.99' // Can be updated dynamically
+          },
+          description: '1-on-1 Custom MVP Setup'
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        alert('Transaction completed by ' + details.payer.name.given_name + '! Check your email for the guide.');
+        // Here you would normally redirect to the success/download page
+        window.location.href = "https://aiagent.com.mx/blog/0-cost-mvp.html";
+      });
+    }
+  }).render('#paypal-button-container-3');
+</script>
+
  </div>
  </div>
  </div>
