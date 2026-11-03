@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://aiagent.com.mx/</loc>
-    <lastmod>2026-05-26</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://aiagent.com.mx/news.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://aiagent.com.mx/tutorials.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://aiagent.com.mx/reviews.html</loc>
-    <priority>0.80</priority>
-  </url>
+  <url><loc>https://www.aiagent.com.mx/</loc></url>
+  <url><loc>https://www.aiagent.com.mx/news.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/reviews.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/tutorials.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/0-cost-mvp.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/ai-agent-automation-operating-model.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/ai-agent-memory-architecture-2026.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/building-billion-dollar-affiliate-portfolio-ai-agents.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/crewai-vs-autogen-vs-langgraph-2026.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/gemini-3-1-vs-minimax-2-7-review-1.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/gemini-3-1-vs-minimax-2-7-review-2.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/gemini-3-1-vs-minimax-2-7-review-3.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/google-io-2026-gemini-spark-ai-agent-revolution.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/how-ai-agents-revolutionize-affiliate-marketing.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/mastering-ai-seo-for-affiliate-marketing.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/mcp-model-context-protocol-ai-agents-2026.html</loc></url>
+  <url><loc>https://www.aiagent.com.mx/blog/self-evolving-ai-agents-2026.html</loc></url>
 </urlset>
